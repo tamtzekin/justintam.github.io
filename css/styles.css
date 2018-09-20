@@ -1,0 +1,62 @@
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: 10px; 
+  font-size: 30px; 
+  color: #fff; 
+  text-shadow: -1.5px -1.5px 0 #ffffff, 1.5px -1.5px 0 #A93226, -1.5px 1.5px 0 #C0392B, 1.5px 1.5px 0 #F5B7B1; 
+  padding-left: 40px;
+}
+
+p.intro{
+    padding: 10px 30px 10px 80px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+}
+
+p.body{
+    padding: 10px 30px 10px 100px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+  }
+
+p.header{
+  padding: 10px 30px 10px 60px;
+  font-size: 10px;
+  font-family: Arial;
+}
+/*how to deploy this in html?*/
+.bg {
+  background: fixed, linear-gradient(to bottom, #e50000 3%,#cc0000 27%,#b20000 50%,#990000 75%,#660000 100%);
+  background-blend-mode: color-burn;
+  padding: 100%;
+}
+
+body {
+  background-color: #fbfcfc;
+  margin: 20px;
+  font-family: 'Lora', serif;
+  font-size: 12px; 
+  color: #922b21;
+}
+
+span class.heading{
+  padding: 10px 30px 10px 40px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+  a span.glow {
+    color: #922b21;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+  a:hover span.glow:hover {
+    color: #641e16 ;
+    cursor: default;
+    text-shadow:
+    -1.5px -1.5px 0 #FFFFFF,
+    1.5px -1.5px 0 #A93226,
+    -1.5px 1.5px 0 #C0392B,
+    1.5px 1.5px 0 #F5B7B1;
+    transition: all 0.2s ease-in-out 0s;
+}
