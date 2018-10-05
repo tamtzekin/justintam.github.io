@@ -1,20 +1,22 @@
 h1 {
   font-family: 'Source Code Pro', monospace;
-  letter-spacing: 10px; 
-  font-size: 30px; 
-  color: #fff; 
-  text-shadow: -1.5px -1.5px 0 #ffffff, 1.5px -1.5px 0 #A93226, -1.5px 1.5px 0 #C0392B, 1.5px 1.5px 0 #F5B7B1; 
-  padding-left: 40px;
+  letter-spacing: 5px; 
+  font-size: 20px; 
+/*  color: #fff; 
+*//*  text-shadow: -1.5px -1.5px 0 #ffffff, 1.5px -1.5px 0 #A93226, -1.5px 1.5px 0 #C0392B, 1.5px 1.5px 0 #F5B7B1; 
+/**/
 }
 
 p.intro{
-    padding: 10px 30px 10px 80px;
+    text-align: left;
+    padding: 10px 30px 10px 40px;
     font-family: 'Lora', serif;
     font-size: 14px;
 }
 
 p.body{
-    padding: 10px 30px 10px 100px;
+    text-align: left;
+    padding: 10px 30px 10px 40px;
     font-family: 'Lora', serif;
     font-size: 16px;
   }
