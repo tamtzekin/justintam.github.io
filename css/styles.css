@@ -52,6 +52,10 @@ p.body{
     text-decoration: none !important;
   }
 
+p::selection {
+  background: #ffff00;
+}
+
 p.header{
   padding: 10px 30px 10px 60px;
   font-size: 10px;
@@ -93,3 +97,4 @@ span class.heading{
     1.5px 1.5px 0 #F5B7B1;
     transition: all 0.2s ease-in-out 0s;
 }
+
