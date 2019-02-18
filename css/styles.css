@@ -11,7 +11,7 @@ h1 {
 
 .bg {
   /* Background image and gradient */
-/*   background: fixed, linear-gradient(to bottom, #fbfcfc 3%,#cc0000 27%,#e86f97 50%,#b08cff 75%,#5477af 100%);
+/*   background: fixed, linear-gradient(to ttom, #fbfcfc 3%,#cc0000 27%,#e86f97 50%,#b08cff 75%,#5477af 100%);
 */  
   /*  Background blend mode 
       for blending the image and thegradient.
@@ -39,7 +39,7 @@ p.intro{
     text-align: left;
     padding: 10px 30px 10px 40px;
     font-family: 'Lora', serif;
-    font-size: 40px;
+    font-size: 24px;
     text-decoration: none !important;
 
 }
@@ -48,8 +48,9 @@ p.body{
     text-align: left;
     padding: 10px 30px 10px 40px;
     font-family: 'Lora', serif;
-    font-size: 40px;
+    font-size: 18px;
     text-decoration: none !important;
+    line-height: 160%;
   }
 
 p::selection {
@@ -58,14 +59,13 @@ p::selection {
 
 p.header{
   padding: 10px 30px 10px 60px;
-  font-size: 10px;
   font-family: Arial;
   text-decoration: none !important;
 }
 
 body {
   background-color: #fbfcfc;
-  margin: 20px;
+  margin: 10px;
   font-family: 'Lora', serif;
   font-size: 12px; 
   color: #922b21;
