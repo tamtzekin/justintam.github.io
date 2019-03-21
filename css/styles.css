@@ -66,7 +66,7 @@ body {
   margin: 10px;
   font-family: 'Lora', serif;
   font-size: 12px; 
-  color: #922b21;
+  color: #000;
 
 }
 
@@ -81,6 +81,7 @@ span class.heading{
 }
 
 body {
+  max-width: 600px;
   align-items: center;
   display: flex;
   font-family: 'Lora', serif;
@@ -94,7 +95,7 @@ a {
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 1.5px 1.5px;
-  color: #922b21;
+  color: #000;
   text-decoration: none;
 }
 
