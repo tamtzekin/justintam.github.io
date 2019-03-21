@@ -1,5 +1,4 @@
 h1 {
-  max-width: 375px;
   font-family: 'Work Sans Light', monospace;
   letter-spacing: 6px; 
   font-size: 16px; 
@@ -41,14 +40,16 @@ p.intro{
     padding: 10px 30px 10px 0px;
     font-family: 'Lora', serif;
     font-size: 16px;
+    text-decoration: none !important;
 
 }
 
 p.body{
-    text-decoration: none;
     text-align: left;
     padding: 10px 30px 10px 0px;
     font-family: 'Lora', serif;
+    font-size: 16px;
+    text-decoration: none !important;
     line-height: 160%;
   }
 
@@ -58,7 +59,8 @@ p::selection {
 
 p.header{
   padding: 10px 30px 10px 60px;
-  font-family: 'Work Sans Light' monospace;
+  font-family: Arial;
+  text-decoration: none !important;
 }
 
 body {
@@ -67,41 +69,72 @@ body {
   font-family: 'Lora', serif;
   font-size: 12px; 
   color: #922b21;
+  text-decoration: none !important;
 
 }
 
 span class.heading{
   padding: 10px 30px 10px 40px;
-  font-family: 'Work Sans', monospace;
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none !important;
 }
 
-/*squiggle*/
-:root {
-  --mainColor: #d03e2f;
+
+  a span.glow {
+    color: #922b21;
+    /* font: 'Work Sans Bold', monospace; */
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none !important;
 }
 
-body {
-  align-items: center;
-  display: flex;
-  font-family: 'Lora', serif;
-  font-size: 1em;
-  height: 100vh;
-  justify-content: center;
+  a:hover span.glow:hover {
+    color: #641e16 ;
+    /* font: 'Work Sans Bold', monospace; */
+    cursor: help;
+    text-decoration: none !important;
+    text-shadow:
+    -1.5px -1.5px 0 #FFFFFF,
+    1.5px -1.5px 0 #A93226,
+    -1.5px 1.5px 0 #C0392B,
+    1.5px 1.5px 0 #F5B7B1;
+    transition: all 0.2s ease-in-out 0s;
 }
 
-a {
-  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 1.5px 1.5px;
-  color: #922b21;
-  text-decoration: none;
+/* text reveal effect*/
+$pad: 5px;
+$theme: red;
+
+.banner {
+  position: relative;
+  width: 100px;
+  padding: $pad;
+  overflow-x: hidden;
+  &:hover .reveal:before {
+    transform: translateX(100%);
+  }
+  /* border: 1px solid black; */
+}
+.reveal {
+  position: relative;
+}
+.reveal:before {
+  background: $theme;
+  content: '';
+  position: absolute;
+  left: -$pad;
+  top: -$pad;
+  bottom: -$pad;
+  right: -$pad;
+  transition: all 0.2s linear;
+  box-shadow: -3px 0 6px -1px #bbb;
 }
 
-a:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .9s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23d03e2f' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 100%;
-  background-size: auto 4px;
-  background-repeat: repeat-x;
-  text-decoration: none;
+.full:after {
+  background: $theme;
+  content: '';
+  position: absolute;
+  left: calc(100% + #{$pad});
+  top: -$pad;
+  bottom: -$pad;
+  right: -1000%;
 }
