@@ -1,61 +1,61 @@
-h1 {
-  max-width: 40em;
-  font-family: 'Work Sans Light', monospace;
-  letter-spacing: 6px; 
-  font-size: 0.8rem; 
-  text-decoration: none !important;
-}
-
+/* 
 p.intro{
   max-width: 40em;  
   text-align: left;
   padding: 10px 30px 10px 0px;
   font-family: 'Lora', serif;
   font-size: 1.2rem;
-
-}
+} */
 
 p::selection {
-  background: #ffff00;
-}
-
-p.header{
-  max-width: 40em;
-  padding: 10px 30px 10px 60px;
-  font-family: 'Work Sans Light' monospace;
-  
-}
-
-span class.heading{
-  padding: 10px 30px 10px 40px;
-  font-family: 'Work Sans', monospace;
-}
-
-/*squiggle*/
-:root {
-  --mainColor: #d03e2f;
+  background: #000;
 }
 
 a {
-  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  /* background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
 	background-position: 0 100%;
 	background-repeat: repeat-x;
-	background-size: 3.5px 3.5px;
+	background-size: 2.5px 2.5px;
   color: #000;
-  text-decoration-line: none;
+  text-decoration-line: none; */
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #d03e2f 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  /* font-size: 1.75em; */
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: background-position 1s ease-out;
 }
 
 a:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .9s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23d03e2f' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .9s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23d03e2f' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 4px;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; */
   /* text-decoration: none; */
+  background-position: -99.99% 0;
+  font-style: oblique;
+  color: white;
 }
+
+/* .a {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  font-size: 1.75em;
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+.a:hover {
+  background-position: -99.99% 0;
+} */
 
 /*fade text settings*/
 body {
-  max-width: 25em;
+  max-width: 50em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -64,43 +64,35 @@ body {
   font-weight: 10;
   color: #000;
   overflow-x: hidden;
- }
+}
  
  .top-10 {
   margin: 0;
   /* padding: 6%; */
   list-style: none;
   font-size: 1.2rem;
-  line-height: 1.5em;
+  /* line-height: 1.5em; */
 }
  
  .top-10 li {
   margin: 1rem 0;
  }
- 
- .footer {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  height: 15rem;
-  bottom: 0;
-  background-image: linear-gradient(transparent, whitesmoke);
-  z-index: 10;
-  pointer-events: none;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: flex-end;
- }
- 
- .footer .secondary {
-  position: absolute;
-  top: 70%;
-  z-index: 20;
-  right: 6%;
-  font-size: 1.5rem;
-  transform: translateY(-50%);
-  font-family: 'Lora', monospace;
- }
+
+ /*hover text settings*/
+ html, body {
+  height: 100%;
+}
+/* body {
+  /* background: #7abde0; */
+  /* display: table; */
+  /* font-family: "Roboto", sans-serif; */
+  /* margin: 0 2em; */
+} */
+
+h2 {
+  /* display: table-cell; */
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
