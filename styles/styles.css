@@ -1,0 +1,22 @@
+body {
+  font-size: 1.2vw;
+  line-height: 1.2em;
+}
+body::selection {
+  background: #000;
+}
+
+a {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #d03e2f 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  text-decoration: none;
+  transition: background-position 1s ease-out;
+}
+
+a:hover {
+  background-position: -99.99% 0;
+  font-style: oblique;
+  color: #606060;
+}
