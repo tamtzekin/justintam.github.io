@@ -1,4 +1,8 @@
-p::selection {
+body {
+  font-size: 1.2vw;
+  line-height: 1.2em;
+}
+body::selection {
   background: #000;
 }
 
@@ -7,7 +11,6 @@ a {
   background-position: -0% 0;
   background-size: 200% auto;
   color: #222;
-  line-height: 1.15em;
   text-decoration: none;
   transition: background-position 1s ease-out;
 }
