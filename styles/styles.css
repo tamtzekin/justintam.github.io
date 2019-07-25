@@ -1,8 +1,12 @@
-body {
-  font-size: 1.2vw;
+.glow {
   line-height: 1.2em;
 }
-body::selection {
+
+.glow::selection{
+  background: #000;
+}
+
+::selection {
   background: #000;
 }
 
@@ -19,4 +23,8 @@ a:hover {
   background-position: -99.99% 0;
   font-style: oblique;
   color: #606060;
+}
+
+a::selection {
+  background: #000;
 }
