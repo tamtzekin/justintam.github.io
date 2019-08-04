@@ -1,30 +1,39 @@
-.glow {
-  line-height: 1.2em;
+h1 {
+  font-family: Lora;
+  font-size: inherit;
 }
 
-.glow::selection{
-  background: #000;
-}
-
-::selection {
-  background: #000;
+li {
+  font-family: Lora;
 }
 
 a {
   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #d03e2f 50%);
-  background-position: -0% 0;
   background-size: 200% auto;
+  background-position: -0% 0;
+  transition: background-position 1s ease-out;
   color: #222;
   text-decoration: none;
-  transition: background-position 1s ease-out;
 }
 
 a:hover {
   background-position: -99.99% 0;
-  font-style: oblique;
   color: #606060;
+  font-style: oblique;
 }
 
 a::selection {
+  background: #000;
+}
+
+.highlight {
+  line-height: 1.2em;
+}
+
+.highlight::selection{
+  background: #000;
+}
+
+::selection {
   background: #000;
 }
