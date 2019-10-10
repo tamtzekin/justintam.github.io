@@ -37,3 +37,44 @@ a::selection {
 ::selection {
   background: #000;
 }
+
+.section {
+  font-style: underline;
+}
+
+/* .hideonhover figure img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.hideonhover figure:hover img {
+	-webkit-filter: grayscale(50%) blur(30px);
+  filter: grayscale(50%) blur(30px);
+  background: url(images/headshot2.jpg) no-repeat;
+} */
+
+.img-opacity img {position:absolute;top:55%;right:0px;bottom:0px;left:0px}
+
+.img-opacity .img-1 {opacity:1}
+.img-opacity .img-2 {opacity:0}
+.img-opacity:hover .img-1 {opacity:0}
+.img-opacity:hover .img-2 {opacity:1}
+
+.img-opacity img
+{
+transition:all .2s ease-in-out;
+-webkit-transition:all .2s ease-in-out;
+-moz-transition:all .2s ease-in-out;
+-ms-transition:all .2s ease-in-out;
+-o-transition:all .2s ease-in-out;
+}
+
+.img-opacity:hover img
+{
+transition:all .1s ease-in-out;
+-webkit-transition:all .1s ease-in-out;
+-moz-transition:all .1s ease-in-out;
+-ms-transition:all .1s ease-in-out;
+-o-transition:all .1s ease-in-out;
+}
