@@ -1,7 +1,9 @@
 body {
-  background-color: #ffd4a6;
+  background-color: #fff0e3; /*ffd4a6*/
+  color: #2d2dba;
   font-size: 3vw;
   max-width: 80%;
+  line-height: 1.8;
 }
 
 h1 {
@@ -20,11 +22,11 @@ li {
 }
 
 a {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #d03e2f 50%);
-  background-size: 200% auto;
+  /* background-image: linear-gradient(to right, rgba(255, 165, 0, 0) 0%, #d3721c 99%); */
+  background-size: 500% auto;
   background-position: -0% 0;
+  color: #2d2dba;
   transition: background-position 1s ease-out;
-  color: #222;
   text-decoration: none;
 }
 
@@ -32,7 +34,7 @@ a:hover {
   font-size: 0;
   line-height: 0;
   background-position: -99.99% 0;
-  color: #606060;
+  color: #d3721c; /*606060*/
   font-family: 'Work Sans', sans-serif;
   font-style: oblique;
 }
