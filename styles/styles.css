@@ -1,6 +1,6 @@
 body {
-  background-color: #fff0e3; /*ffd4a6*/
-  color: #2d2dba;
+  background-color: #fff6f5; /*ffd4a6*/
+  color: #16165d;
   font-family: 'Lora', serif;
   font-size: 1.7rem;
   line-height: 1.8;
@@ -22,7 +22,7 @@ a {
   /* background-image: linear-gradient(to right, rgba(255, 165, 0, 0) 0%, #d3721c 99%); */
   background-size: 500% auto;
   background-position: -0% 0;
-  color: #2d2dba;
+  color: #16165d;
   transition: background-position 1s ease-out;
   text-decoration: none;
 }
