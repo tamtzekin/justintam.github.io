@@ -1,21 +1,21 @@
 body {
-  background-color: #fff6f5; /*ffd4a6*/
+  background-color: #c0c0c0; /*fff6f5*/
   color: #16165d;
-  font-family: 'Lora', serif;
-  font-size: 1.7rem;
+  font-family: 'Work Sans', serif;
+  font-size: 1rem;
   line-height: 1.8;
   max-width: 80%;
   margin-left: 5%;
 }
 
 h1 {
-  font-family: 'Lora', serif;
-  font-size: 3vw;
+  font-family: 'Work Sans', serif;
+  font-size: 1rem;
 }
 
 h2 {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 2vw;
+  font-family: 'Lora', sans-serif;
+  font-size: 1rem;
 }
 
 a {
@@ -38,7 +38,7 @@ a:hover {
 
 a:hover:before {
   content: attr(data-hover);
-  font-size: 1.7rem;
+  font-size: 1rem;
   line-height: 2em;
   margin-bottom: -10px;
 }
@@ -71,22 +71,22 @@ a::selection {
   top: 20%;
   right: 0;
   bottom: 0;
-  left: 80%
+  left: 50%
 }
 
 @media only screen and (max-device-width: 736px) {
   .img-opacity img {
     position: absolute;
-    top: 90%;
-    right: 10%;
+    top: 200%;
+    right: 60%;
     bottom: 0;
-    left: 20%;
+    left: 10%;
   }
 }
 
 
 .img-opacity .img-1 {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .img-opacity .img-2 {
