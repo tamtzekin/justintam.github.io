@@ -95,16 +95,14 @@ a::selection {
   top: 20%;
   right: 0;
   bottom: 0;
-  left: 50%
+  left: 80%
 }
 
 @media only screen and (max-device-width: 736px) {
   .img-opacity img {
     position: absolute;
-    top: 200%;
-    right: 60%;
-    bottom: 0;
-    left: 10%
+    top: 101%;
+    left: 15%
   }
 }
 
