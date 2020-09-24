@@ -40,7 +40,7 @@ h2 {
     font-size: 1.3rem;
 }
 
-a {
+a.toplinks {
     background-size: 500% auto;
     background-position: -0% 0;
     color: #d31c22;
@@ -48,16 +48,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    font-size: 0;
-    line-height: 0;
-    background-position: -99.99% 0; */
-    color: #000;
+a.toplinks:hover {
+    background-position: -99.99% 0;
     cursor: help;
+    font-size: 0;
     font-style: oblique;
+    line-height: 0;
 }
 
-a:hover:before {
+a.toplinks:hover:before {
     content: attr(data-hover);
     font-size: 0.85rem;
 }
@@ -70,6 +69,16 @@ a::selection {
 ::selection {
     background: #000;
     color: #fff;
+}
+
+a.bodylinks {
+    color: darkslategray;
+}
+
+a.bodylinks:hover {
+    color: #d31c22;
+    cursor: help;
+    font-style: oblique;
 }
 
 .img-opacity img {
