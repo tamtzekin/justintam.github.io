@@ -132,7 +132,7 @@ a:hover {
 	
 } */
 
-/* a::selection {
+a::selection {
     background: #000;
     color: #d31c22;
 }
@@ -140,7 +140,7 @@ a:hover {
 ::selection {
     background: #000;
     color: #fff;
-} */
+}
 
 a[target="_blank"]:hover::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
