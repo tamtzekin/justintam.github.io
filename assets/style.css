@@ -242,12 +242,12 @@ li {
 
 
 /* Scribble link animation */
-.link--carme {
+.link--worksans {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.25rem;
 }
 
-.link--carme::before {
+.link--worksans::before {
     display: none;
 }
 
