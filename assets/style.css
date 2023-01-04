@@ -200,6 +200,10 @@ li {
 	 width: 100%;
 } */
 
+.wheel {
+	font-size: 1.6rem;
+}
+
 /** MOBILE VIEW **/
 @media only screen and (max-device-width: 375px) {
 	body {
