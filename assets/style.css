@@ -37,7 +37,7 @@ section div.body-text {
 
 .body-text {
 	font-size: 1.2rem;
-	text-shadow: 0.3px 0.5px #580000;;
+	/* text-shadow: 0.3px 0.5px #580000;; */
 	
 	animation: fadeIn ease 0.8s;
 	-webkit-animation: fadeIn ease 0.8s;
@@ -97,8 +97,8 @@ html {
 }
 
 body {
-	--color-link: #d31c22;
-	--color-link-hover: #111;
+	--color-link: #dcd0d0;
+	--color-link-hover: #000;
 	color: var(--color-text);
 	
 	float: left;
@@ -257,7 +257,7 @@ li {
 
 
 .link {
-    cursor: pointer;
+    cursor: crosshair;
     font-size: 18px;
     position: relative;
     white-space: nowrap;
@@ -304,15 +304,24 @@ li {
 }
 
 .link__graphic--scribble path {
-    transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: stroke-dashoffset 1.4s cubic-bezier(0.2, 0, 0.3, 0.6);
 }
 
 .link:hover .link__graphic--scribble path {
-    transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
-    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(2, 1.3, 2.7, 1);
+    transition-duration: 0.7s;
 }
 
+/* 
+// Original code
+.link__graphic--scribble path {
+	transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+}
 
+.link:hover .link__graphic--scribble path {
+	transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+	transition-duration: 0.3s;
+} */
 /* Portrait fade */
 /* 
 .img-opacity img {
