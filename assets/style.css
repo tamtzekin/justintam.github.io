@@ -175,13 +175,15 @@ a.toplinks:hover {
 a.toplinks:hover:before {
     content: attr(data-hover);
     font-size: 1rem;
+	
 }
 
 sup {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     font-family: monospace;
     font-style: oblique;
 	vertical-align: middle;
+	line-break: auto;
 }
 
 li {
