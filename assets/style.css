@@ -22,6 +22,26 @@
 	width: 30%;
 }
 
+details {
+	display: inline;
+}
+
+details summary {
+	display: inline;
+	list-style: none;
+	cursor: crosshair;
+	white-space: nowrap;
+	/* padding-left: 0.3em; */
+}
+
+details > :not(summary) {
+    display: inline;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
 section {
     display: flex;
     flex-direction: row;
@@ -35,16 +55,16 @@ section div.body-text {
     padding: 60px 100px;
 }
 
-.body-text {
+/* .body-text {
 	font-size: 1.2rem;
-	/* text-shadow: 0.3px 0.5px #580000;; */
+	text-shadow: 0.3px 0.5px #580000;;
 	
 	animation: fadeIn ease 0.8s;
 	-webkit-animation: fadeIn ease 0.8s;
 	-moz-animation: fadeIn ease 0.8s;
 	-o-animation: fadeIn ease 0.8s;
 	-ms-animation: fadeIn ease 0.8s;
-}
+} */
 
 @keyframes fadeIn{
 	0% {
@@ -93,24 +113,28 @@ section div.body-text {
 
 html {
 	min-height: 100%;
-	background: linear-gradient(hwb(170 88% 3%) 5%, rgba(189, 35, 35, 0) 98%);
+	background: linear-gradient(hwb(170 88% 3%) 5%, rgba(188,228,229, 0) 98%);
 }
 
 body {
-	--color-link: #ff0011;
-	--color-link-hover: #000;
+	--color-text: #180e0e;
+	--color-link: #180e0e;
+	--color-link-hover: #c55347;
 	color: var(--color-text);
 
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	
 	float: left;
-	font-family: 'Pantasia';
-	line-height: 1.4;
+	font-family: serif;
+	
+	line-height: 1.65;
 	padding: 20px 10vw 0 5vw;
 	position: relative;
 	/* scrollbar-color: blue orange; */
 	/* scrollbar-width: thin; */
 	z-index: 20;
+
+	-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility
 }
 
 
@@ -136,7 +160,7 @@ a:hover {
 
 a::selection {
     background: #000;
-    color: #d31c22;
+    color: #fdbf68;
 }
 
 ::selection {
@@ -157,9 +181,13 @@ h1 {
 
 h3 {
 	font-size: 1.1rem;
-	font-family: 'Pantasia', serif;
-	font-weight: 200;
-	display: inline;
+	font-family: serif;
+	font-weight: 400;
+	display: inline-block;
+}
+
+h3:hover {
+	transform: rotate(-4.6deg);
 }
 
 header {
@@ -191,7 +219,7 @@ a.toplinks:hover:before {
 }
 
 sup {
-    font-size: 0.8rem;
+    font-size: 0.825rem;
     font-family: monospace;
     font-style: oblique;
 	vertical-align: middle;
@@ -200,10 +228,16 @@ sup {
 
 li {
     list-style-type: none;    
-	padding: 1.3vw 0 1.3vw 0;
+	padding: 1.3vw 0 0.5vw 0;
+
+	/* margin-bottom: 0.1vw; */
 	/* border-style: solid; */
 	/* border-radius: 20px; */
-	margin-bottom: 2vw;
+}
+
+li::marker {
+	content: "· ";
+	font-size: 1em;
 }
 
 /* to make youtube responsive */
@@ -220,6 +254,11 @@ li {
 	 top: 0;
 	 width: 100%;
 } */
+
+p {
+	display: inline; /* Crucial - prevents <details> from being ejected */
+	margin: 0; /* Remove default paragraph margins */
+}
 
 .wheel {
 	font-size: 1rem;
@@ -334,6 +373,30 @@ li {
     transition-duration: 0.7s;
 }
 
+.lang-swap {
+	position: relative;
+	display: inline-block;   /* Required for pseudo-elements */
+  }
+  
+  .lang-swap:hover {
+	color: transparent;     /* Hide original text */
+  }
+  
+  .lang-swap:hover::after {
+	content: attr(data-language);
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: initial;
+	white-space: nowrap;
+  }
+
+/* Keep link visible during hover */
+.lang-swap:hover a {
+	position: relative;
+	z-index: 1;
+  }
+  
 /* 
 // Original code
 .link__graphic--scribble path {
