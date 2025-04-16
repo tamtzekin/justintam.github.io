@@ -388,7 +388,6 @@ p {
 	left: 0;
 	top: 0;
 	color: initial;
-	white-space: nowrap;
   }
 
 /* Keep link visible during hover */
